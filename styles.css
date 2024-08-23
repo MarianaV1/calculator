@@ -1,0 +1,76 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f1f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#calculator {
+    background-color: #ffebf5;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 320px;
+    text-align: center;
+}
+
+#display {
+    background-color: #ffe6f0;
+    border-radius: 10px;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: right;
+    box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #ff99cc;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.5em;
+    margin: 5px;
+    padding: 20px;
+    width: 60px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+button:active {
+    background-color: #e68aa3;
+}
+
+button:hover {
+    background-color: #ff80b3;
+    cursor: pointer;
+}
+
+#clear {
+    background-color: #ff4d88;
+}
+
+#equals {
+    background-color: #ff1a66;
+    width: calc(60px * 2 + 10px);
+}
+
+.operator {
+    background-color: #ff4d88;
+}
+
+#calculator button.operator:active {
+    background-color: #e63971;
+}
+
+#calculator button#clear:active {
+    background-color: #cc3c70;
+}
+
+#calculator button#equals:active {
+    background-color: #e6004c;
+}
